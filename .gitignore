@@ -16,3 +16,7 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+trend_explain.json
+trend_explain_debug.json
+explain_summary.csv
