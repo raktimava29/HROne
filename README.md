@@ -74,7 +74,3 @@ pytest -q
 For the 100,000-record performance check, seed only the isolated `hrone_perf_test` database and run the API with `MONGO_DB=hrone_perf_test`; see `seed_perf_data.py` and `run_perf_benchmark.py`. Never use `--reset` against the application database.
 
 Latest recorded benchmark run: 5 measured runs after 2 warmups; all cases returned HTTP 200 with zero failed cases. Median latencies: attendance page 176.5 ms, date range 159.2 ms, status filter 157.3 ms, employee monthly 148.6 ms, department summary 604.4 ms, late leaderboard 218.5 ms, 90-day trend 399.8 ms, and attendance-list explain 89.3 ms. The status-filter p95 had a 3.24-second outlier; repeat benchmark if using these numbers for a formal performance claim. Results depend on MongoDB tier, network, and host.
-
-## Submission hygiene
-
-Do not commit `.env`, credentials, database dumps, virtual environments, or generated explain/benchmark artifacts. Keep this repository public through October 31, 2026, as required by the assignment.
